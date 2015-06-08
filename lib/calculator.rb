@@ -10,6 +10,7 @@ class Calculator
 
   def operate(arg_array)
     @result + arg_array[1].to_i if (arg_array[0] == 'add')
+    @result - arg_array[1].to_i if (arg_array[0] == 'subtract')
   end
 
   def get_command
