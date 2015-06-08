@@ -4,8 +4,11 @@ require_relative './calculator.rb'
 
 command = gets.strip
 calculator = Calculator.new()
-parser = Parser.new()
+
 while command != 'exit' do
-  puts calculator.operate(parser.read_command(command))
+  operator = Parser.new(command)
+  # puts calculator.operate(operator.operate)
+  result =  operator.execute(result)
+  puts result
   command = gets.strip
 end
