@@ -9,8 +9,11 @@ class Calculator
   end
 
   def operate(arg_array)
-    @result + arg_array[1].to_i if (arg_array[0] == 'add')
-    @result - arg_array[1].to_i if (arg_array[0] == 'subtract')
+    return @result + arg_array[1].to_i if (arg_array[0] == 'add')
+    return @result - arg_array[1].to_i if (arg_array[0] == 'subtract')
+    return @result * arg_array[1].to_i if (arg_array[0] == 'multiply')
+    return @result / arg_array[1].to_i if (arg_array[0] == 'divide')
+    return 0 if arg_array[0] == 'cancel'
   end
 
   def get_command
