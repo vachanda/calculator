@@ -38,10 +38,24 @@ describe Calculator do
   end
 
   it 'should return 100 when sqr is commanded on  10' do
+    calculator = Calculator.new(10)
+    operand = 0
+    result = calculator.square
+    expect(result).to eq(100)
+  end
+
+  it 'should return 100 when square_root is commanded on  10' do
     calculator = Calculator.new(100)
     operand = 0
-    result = calculator.sqr
+    result = calculator.square_root
     expect(result).to eq(10)
+  end
+
+  it 'should return 6.78 when abs is commanded on -6.78' do
+    calculator = Calculator.new(-6.78)
+    operand = 0
+    result = calculator.absolute
+    expect(result).to eq(6.78)
   end
 
 end
