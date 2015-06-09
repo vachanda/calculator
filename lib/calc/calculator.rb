@@ -44,4 +44,8 @@ class Calc::Calculator
     @result = @result ** 3
   end
 
+  def cube_root
+    @result = Math.cbrt(@result).to_f
+  end
+
 end
