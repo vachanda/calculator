@@ -1,13 +1,12 @@
 # invoke addition functionality
-class Addition
+class Calc::AddCommand
   attr_reader :operand
   def initialize(operand)
     @operand = operand
   end
 
-  def execute(sum)
-    calc = Calculator.new()
-    calc.add(@operand, sum)
+  def execute(calculator)
+		calculator.add(@operand)
   end
 
 end
