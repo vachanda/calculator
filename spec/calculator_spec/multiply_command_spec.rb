@@ -1,14 +1,13 @@
 require 'spec_helper'
 
-describe MultiplyCommand do
+describe Calc::MultiplyCommand do
   it 'should return 5 if initialised with 5' do
-    additon = Addition.new(5)
-    expect(additon.operand).to eq(5)
+    additon = Calc::MultiplyCommand.new(5)
+    expect(Calc::MultiplyCommand.operand).to eq(5)
   end  
 
   it 'should return 10 when initialised with 5 and executed with 5' do
-    additon = Addition.new(5)
-    expect(additon.execute(5)).to eq(10)
+    additon = Calc::MultiplyCommand.new(5)
+    expect(Calc::MultiplyCommand.execute(5)).to eq(25)
   end
-
 end
