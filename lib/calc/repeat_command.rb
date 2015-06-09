@@ -5,6 +5,6 @@ class Calc::RepeatCommand
 	end
 
 	def execute
-		
+		Parser.new(@command)
 	end
 end

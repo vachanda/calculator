@@ -28,4 +28,16 @@ class Calc::Calculator
     @result = operand2.to_f
   end
 
+  def absolute
+    @result = @result.abs.to_f
+  end
+
+  def square
+    @result = (@result ** 2).to_f
+  end
+
+  def square_root
+    @result = Math.sqrt(@result).to_f
+  end
+
 end
