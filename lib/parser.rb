@@ -12,7 +12,7 @@ class Parser
 
   def decision_maker 
     arg_array = split_command
-    return Addition.new(arg_array[1]) if (arg_array[0] == 'add')
+    return Addition.new(arg_array[1].to_i) if (arg_array[0] == 'add')
     # return @result = @result - arg_array[1].to_i if (arg_array[0] == 'subtract')
     # return @result = @result * arg_array[1].to_i if (arg_array[0] == 'multiply')
     # return @result = @result / arg_array[1].to_i if (arg_array[0] == 'divide')
