@@ -40,4 +40,8 @@ class Calc::Calculator
     @result = Math.sqrt(@result).to_f
   end
 
+  def cube
+    @result = @result ** 3
+  end
+
 end

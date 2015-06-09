@@ -23,5 +23,6 @@ class Calc::Parser
     return Calc::AbsoluteCommand.new(0) if arg_array[0] == 'abs'
     return Calc::SquareCommand.new(0) if arg_array[0] == 'sqr'
     return Calc::SquareRootCommand.new(0) if arg_array[0] == 'sqrt'
+    return Calc::CubeCommand.new(0) if arg_array[0] == 'cube'
   end
 end
